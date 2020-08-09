@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Black</title>
+    <style>
+        html {
+            background: #000;
+        }
+    </style>
+    <script defer>
+        window.addEventListener("load", function () {
+            document.addEventListener("click", function () { 
+                openFullscreen(document.body);
+            });
+        });
+
+        function openFullscreen(elem) {
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.mozRequestFullScreen) { /* Firefox */
+                elem.mozRequestFullScreen();
+            } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { /* IE/Edge */
+                elem.msRequestFullscreen();
+            }
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
