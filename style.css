@@ -1,81 +1,79 @@
-html{
-	background: #fff /*url("orbit.svg") no-repeat*/;
-	background-position: center;
-	background-size: cover;
-	color: #ddd;
-	height: 100%;
+html {
+    background: #fff /*url("orbit.svg") no-repeat*/;
+    background-position: center;
+    background-size: cover;
+    color: #000;
+    height: 100%;
 }
 
-body{
-	font-family: sans-serif;
+body {
+    font-family: sans-serif;
 }
 
-h1{
-	font-family: sans-serif;
-	text-shadow:
-		#00f 0 0 5px,
-		#f00 0 0 10px
-		;
+h1 {
+    font-family: sans-serif;
 }
 
-.sites{
-	margin: 5em auto 0 auto;
-	text-align: center;
-	max-width: 55em;
-}
-.sites * {
-	display: inline-block;
-	vertical-align: top;
-	width: 7em;
-	height: 1em;
-	padding: 2em 0 2em 0;
-	margin: 1em 0 0 1em;
-	border: 3px solid transparent;
-	border-radius: 10px;
+.sites {
+    margin: 5em auto 0 auto;
+    text-align: center;
+    max-width: 55em;
 }
 
-.sites a {
-	background: #fff;
-	text-decoration: none;
-	border: 3px solid #aaa;
-	color: #666;
-}
-.sites a:hover{
-	background: #aaa;
-	color: #000;
-	border: 3px solid #444;
+    .sites * {
+        display: inline-block;
+        vertical-align: top;
+        width: 7em;
+        height: 1em;
+        padding: 2em 0 2em 0;
+        margin: 1em 0 0 1em;
+        border: 3px solid transparent;
+        border-radius: 10px;
+    }
+
+    .sites a {
+        background: #fff;
+        text-decoration: none;
+        border: 3px solid #aaa;
+        color: #666;
+    }
+
+        .sites a:hover {
+            background: #aaa;
+            color: #000;
+            border: 3px solid #444;
+        }
+
+    .sites .inactive {
+        opacity: 0.5;
+    }
+
+@media all and (max-width: 42em) {
+    .sites {
+        max-width: 25em;
+    }
+
+        .sites span {
+            display: none !important;
+        }
 }
 
-.sites .inactive {
-	opacity: 0.5;
-}
-
-@media all and (max-width: 42em)
-{
-	.sites
-	{
-		max-width: 25em;
-	}
-	.sites span
-	{
-		display: none !important;
-	}
-}
-@media all and (max-width: 26em)
-{
-	.sites *
-	{
-		display: block;
-		width: auto;
-		padding: 1em;
-		background: red;
-	}
+@media all and (max-width: 26em) {
+    .sites * {
+        display: block;
+        width: auto;
+        padding: 1em;
+        background: red;
+    }
 }
 
 
-footer
-{
-	position: absolute;
-	bottom: 0;
-	right: 0;
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
